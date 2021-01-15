@@ -54,6 +54,11 @@ namespace MathQuiz
              adding any values to it
              */
             sum.Value = 0;
+
+            // Start the timer
+            timeLeft = 30;
+            timeLabel.Text = "30 seconds";
+            timer1.Start();
         }
 
         private void StartButton_Click(object sender, EventArgs e)
