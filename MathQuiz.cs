@@ -74,6 +74,21 @@ namespace MathQuiz
             minusRightLabel.Text = subtrahend.ToString();
             difference.Value = 0;
 
+            // Fill in the multiplication problem
+            multiplicand = randomizer.Next(2, 11);
+            multiplier = randomizer.Next(2, 11);
+            timesLeftLabel.Text = multiplicand.ToString();
+            timesRightLabel.Text = multiplier.ToString();
+            product.Value = 0;
+
+            // Fill in the division problem
+            dividend = randomizer.Next(2, 11);
+            int temporaryQuotient = randomizer.Next(2, 11);
+            dividend = divisor * temporaryQuotient;
+            dividedLeftLabel.Text = dividend.ToString();
+            dividedRightLabel.Text = divisor.ToString();
+            quotient.Value = 0;
+
             // Start the timer
             timeLeft = 30;
             timeLabel.Text = "30 seconds";
