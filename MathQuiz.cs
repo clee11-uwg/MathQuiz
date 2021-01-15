@@ -102,7 +102,9 @@ namespace MathQuiz
         private bool CheckTheAnswer()
         {
             if ((addend1 + addend2 == sum.Value)
-                && (minuend - subtrahend ==  difference.Value))
+                && (minuend - subtrahend ==  difference.Value)
+                && (multiplicand * multiplier == product.Value)
+                && (dividend / divisor == quotient.Value))
                 return true;
             else
                 return false;
