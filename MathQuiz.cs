@@ -78,7 +78,8 @@ namespace MathQuiz
         /// <returns>True if the answer's correct, false otherwise</returns>
         private bool CheckTheAnswer()
         {
-            if (addend1 + addend2 == sum.Value)
+            if ((addend1 + addend2 == sum.Value)
+                && (minuend - subtrahend ==  difference.Value))
                 return true;
             else
                 return false;
@@ -124,6 +125,7 @@ namespace MathQuiz
                 timeLabel.Text = "Time's up!";
                 MessageBox.Show("You didn't finish in time.", "Sorry!");
                 sum.Value = addend1 + addend2;
+                difference.Value = minuend - subtrahend;
                 startButton.Enabled = true;
             }
         }
