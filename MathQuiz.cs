@@ -59,6 +59,13 @@ namespace MathQuiz
              */
             sum.Value = 0;
 
+            // Fill in the subtraction problem
+            minuend = randomizer.Next(1, 101);
+            subtrahend = randomizer.Next(1, minuend);
+            minusLeftLabel.Text = minuend.ToString();
+            minusRightLabel.Text = subtrahend.ToString();
+            difference.Value = 0;
+
             // Start the timer
             timeLeft = 30;
             timeLabel.Text = "30 seconds";
