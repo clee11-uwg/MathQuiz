@@ -52,5 +52,11 @@ namespace MathQuiz
              */
             sum.Value = 0;
         }
+
+        private void StartButton_Click(object sender, EventArgs e)
+        {
+            StartTheQuiz();
+            startButton.Enabled = false;
+        }
     }
 }
