@@ -81,13 +81,26 @@ namespace MathQuiz
 
         private void Timer1_Tick(object sender, EventArgs e)
         {
-            if (timeLeft > 0)
+            if (CheckTheAnswer())
             {
                 /*
-                 Display the new time left
-                 by updating the Time Left label
+                If the CheckAnswer() returns true, then the user
+                got the answer right. Stop the timer
+                and show a MessageBox
+                */
+                timer1.Stop();
+                MessageBox.Show("You got all the answers right!", "Congratulations!");
+                startButton.Enabled = true;
+            }
+            else if (timeLeft > 0)
+            {
+                /*
+                 If CheckAnswer() return false, keep counting
+                 down. Decrease the time left by one second and
+                 display the new time left by updating the
+                 Time Left label.
                  */
-                timeLeft = timeLeft - 1;
+                timeLeft--;
                 timeLabel.Text = timeLeft + " seconds";
             }
             else
