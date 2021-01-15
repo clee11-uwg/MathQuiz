@@ -19,7 +19,11 @@ namespace MathQuiz
         int addend1;
         int addend2;
 
-        // This intege variables keeps track of the remaining time
+        // These interger variabes store the numbers for the subtraction problem
+        int minuend;
+        int subtrahend;
+
+        // This integer variables keeps track of the remaining time
         int timeLeft;
         public MathQuiz()
         {
