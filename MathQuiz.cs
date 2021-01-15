@@ -23,6 +23,14 @@ namespace MathQuiz
         int minuend;
         int subtrahend;
 
+        // These integer variables store the numbers for the multiplication problem
+        int multiplicand;
+        int multiplier;
+
+        // These integer variables store the numbers for the division problem
+        int dividend;
+        int divisor;
+
         // This integer variables keeps track of the remaining time
         int timeLeft;
         public MathQuiz()
