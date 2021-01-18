@@ -82,7 +82,7 @@ namespace MathQuiz
             product.Value = 0;
 
             // Fill in the division problem
-            dividend = randomizer.Next(2, 11);
+            divisor = randomizer.Next(2, 11);
             int temporaryQuotient = randomizer.Next(2, 11);
             dividend = divisor * temporaryQuotient;
             dividedLeftLabel.Text = dividend.ToString();
